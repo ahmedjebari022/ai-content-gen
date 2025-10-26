@@ -45,9 +45,11 @@ def getRequest() :
             min_length = 200
             max_length = 300
 
-
-    ai_prompt = f"Write a {user_input["tone"]} {user_input["contentType"]} " \
-        f"about {user_input["topic"]} Around {min_length} - {max_length} words"
+    # fixed quoting to avoid SyntaxError
+    ai_prompt = (
+        f"Write a {user_input['tone']} {user_input['contentType']} "
+        f"about {user_input['topic']} around {min_length} - {max_length} words"
+    )
         
         
     try :
@@ -79,6 +81,6 @@ def getRequest() :
 
 
 if __name__ == "__main__" :
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
 
-    

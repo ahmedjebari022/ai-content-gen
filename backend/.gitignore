@@ -1,0 +1,73 @@
+venv
+.env
+
+# Virtualenvs
+venv/
+.venv/
+
+# Environment files
+.env
+.env.*
+
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+
+# Test / coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+
+# Type checkers
+.mypy_cache/
+.pyre/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Databases
+*.sqlite3
+db.sqlite3
+
+# Uploaded media / static files
+media/
+staticfiles/
+
+# Docker overrides / local compose files
+docker-compose.override.yml
+.env.override
+
+# Secrets (examples)
+secrets.yml
+credentials.yml
+
+# Optional: node modules if you use node tools in backend
+node_modules/

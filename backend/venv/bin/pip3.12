@@ -1,4 +1,4 @@
-#!/home/ahmedkacemjebari/Ai-Content-Generator/backend/venv/bin/python3
+#!/home/ahmedkacemjebari/ai-content-gen/backend/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

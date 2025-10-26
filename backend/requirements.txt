@@ -1,2 +1,5 @@
-python-doten
 flask
+python-dotenv
+flask-cors
+google-genai
+gunicorn==21.2.0
