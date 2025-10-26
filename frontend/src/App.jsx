@@ -18,7 +18,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
   
-  const url = 'http://127.0.0.1:5000/api/generate'
+  // use Vite env var VITE_API_URL (set in Vercel) or fallback to localhost
+  const url = import.meta.env.VITE_API_URL || 'https://ai-content-gen-d68a.onrender.com/api/generate'
   
   async function GenerateResponse(body) {
     try {
